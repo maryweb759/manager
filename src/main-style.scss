@@ -1,0 +1,69 @@
+//there we put global style and change variables values 
+// import fonts - lata and nunito 
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Nunito&display=swap');
+
+$red-violet: #be25a4;
+$violet: #be25a4;
+$violet-bg: #f9e9f6;
+$light-violet: #d266bf;
+$dark-vilet: #851a73;
+$light: #f0f0f0; 
+
+// update bulma's global variables 
+$family-sans-serif: "Nunito", "sans-serif";
+$primary: $violet;
+
+$link: $light-violet; 
+
+
+// update bulma's some component variables  
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+
+// set global style ( will be implemented to the whole app) 
+
+html {
+    background : linear-gradient( to right top, $light-violet, $violet-bg );
+}
+
+html, body {
+    height: 100%;
+} 
+
+.centered-content {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    height: 100%;
+} 
+
+.modal-box {
+    min-height: 200px; 
+    width: 100%;
+    max-width: 500px; 
+    background-color: white; 
+    border-radius: 5px; 
+    padding: 35px;
+} 
+
+.title {
+    font-family: 'lato'; 
+    font-size: 24px; 
+    text-transform: uppercase; 
+    letter-spacing: 2px ; 
+    color: #f13fd4;
+} 
+
+.white-box {
+    padding: 35px;
+    background-color: white;
+    border-radius: 5px;
+} 
+
+.login-button {
+  background-color: $violet;
+}

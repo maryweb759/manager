@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "new-task.component.scss"
+    ],
+    "names": [],
+    "file": "new-task.component.css"
+}

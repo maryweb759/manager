@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Nunito&display=swap");
+html {
+  background: -webkit-gradient(linear, left bottom, right top, from(#d266bf), to(#f9e9f6));
+  background: linear-gradient(to right top, #d266bf, #f9e9f6);
+}
+
+html, body {
+  height: 100%;
+}
+
+.centered-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-box {
+  min-height: 200px;
+  width: 100%;
+  max-width: 500px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 35px;
+}
+
+.title {
+  font-family: 'lato';
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #f13fd4;
+}
+
+.white-box {
+  padding: 35px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.login-button {
+  background-color: #be25a4;
+}
+
+.task-manager-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+  max-height: 600px;
+  position: relative;
+}
+
+.sidebar {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 250px;
+  padding: 42px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.tasks-list-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 42px;
+}
+
+.tasks-list-container .top-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.tasks-list-container .top-bar .title {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 0;
+}
+
+.list-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 15px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 90%;
+  overflow-y: auto;
+}
+
+.list-menu .list-menu-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 15px;
+  border-radius: 4px;
+  width: 100%;
+  color: #5f5f5f;
+  margin-bottom: 5px;
+}
+
+.list-menu .list-menu-item:hover {
+  background: #f0f0f0;
+}
+
+.list-menu .list-menu-item.is-active {
+  background: #f4e4f7;
+  color: #851a73;
+}
+
+.task {
+  background: white;
+  padding: 15px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.task:not(.complete) {
+  cursor: pointer;
+  -webkit-transition: -webkit-box-shadow 0.3s ease, -webkit-transform 0.3s ease;
+  transition: -webkit-box-shadow 0.3s ease, -webkit-transform 0.3s ease;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  transition: box-shadow 0.3s ease, transform 0.3s ease, -webkit-box-shadow 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.task:not(.complete):active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.task:not(.complete):hover {
+  -webkit-box-shadow: 0 0 0 3px rgba(224, 224, 224, 0.603);
+          box-shadow: 0 0 0 3px rgba(224, 224, 224, 0.603);
+}
+
+.task.complete {
+  text-decoration: line-through;
+  opacity: 0.8;
+}
+
+.circle-add-button {
+  max-height: 50px;
+  max-width: 50px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: #be25a4;
+  border-radius: 50px;
+  font-size: 25px;
+  font-weight: 700;
+  border: none;
+}
+
+.empty-state-text {
+  color: #888;
+  color: 20px;
+  text-align: center;
+}
+/*# sourceMappingURL=task-view.component.css.map */

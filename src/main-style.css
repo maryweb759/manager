@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Nunito&display=swap");
+html {
+  background: -webkit-gradient(linear, left bottom, right top, from(#d266bf), to(#f9e9f6));
+  background: linear-gradient(to right top, #d266bf, #f9e9f6);
+}
+
+html, body {
+  height: 100%;
+}
+
+.centered-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-box {
+  min-height: 200px;
+  width: 100%;
+  max-width: 500px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 35px;
+}
+
+.title {
+  font-family: 'lato';
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #f13fd4;
+}
+
+.white-box {
+  padding: 35px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.login-button {
+  background-color: #be25a4;
+}
+/*# sourceMappingURL=main-style.css.map */
